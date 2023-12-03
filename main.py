@@ -114,13 +114,30 @@ window.title("مدیریت فایل")
 window.configure(bg="#5C6BC0")
 window.geometry("300x400")
 Label(window, bg="#5C6BC0", fg="white", font=("Arial", 14), text="چه کاری انجام دهم؟").pack(pady=15)
-Button(window, command=open_file, text="بازکردن فایل", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=copy_file, text="کپی کردن فایل", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=delete_file, text="حذف کردن فایل", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=rename_file, text="تغییر نام فایل", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=move_file, text="انتقال فایل", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=make_directory, text="ایجاد پوشه", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=remove_directory, text="حذف کردن پوشه", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
-Button(window, command=list_files, text="لیست تمام فایل ها", fg="#1A237E", activebackground="#9FA8DA", bg="#C5CAE9", width=30).pack(pady=6)
+
+# Buttons
+Button(window, command=open_file, text="بازکردن فایل", fg="#1A237E",activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=copy_file, text="کپی کردن فایل", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=delete_file, text="حذف کردن فایل", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=rename_file, text="تغییر نام فایل", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=move_file, text="انتقال فایل", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=make_directory, text="ایجاد پوشه", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=remove_directory, text="حذف کردن پوشه", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
+
+Button(window, command=list_files, text="لیست تمام فایل ها", fg="#1A237E", activebackground="#9FA8DA",
+       bg="#C5CAE9", width=30).pack(pady=6)
 
 window.mainloop()
